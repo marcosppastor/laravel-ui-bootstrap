@@ -1,0 +1,41 @@
+# Laravel UI with Laravel Fortify
+
+## Introduction
+
+While laravel is using new Jetstream for authentication, but you still want to use Bootstrap scaffolding and traditional old laravel authentication but backend supported by Laravel Fortify. So here we have laravel Bootstrap 4 scaffolding supported by Fortify.
+
+### Installation
+
+To get started, install LaravelUI Bootstrap4 using composer:
+
+```bash
+composer require shahvirag/laravel-ui-bootstrap4
+```
+
+Add FortifyServiceProvider to config/app.php
+
+```php
+'providers' => [
+    ...
+    App\Providers\FortifyServiceProvider::class,
+    ...
+]
+```
+
+Next install LaravelUI Bootstrap4 using artisan command:
+
+```bash
+php artisan laravelui:bootstrap4
+```
+
+This command will update package.json with Bootstrap4 dependencies, update resources/sass and resources/js, and resources/views with authentication views like login, register, reset passsword request, layouts files etc.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
