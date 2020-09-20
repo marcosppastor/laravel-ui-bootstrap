@@ -2,7 +2,7 @@
 
 ## Introduction
 
-While laravel is using new Jetstream for authentication, but you still want to use Bootstrap scaffolding and traditional old laravel authentication but backend supported by Laravel Fortify. So here we have laravel Bootstrap 4 scaffolding supported by Fortify.
+While laravel is using new Jetstream for authentication, but you still want to use Bootstrap scaffolding and traditional old laravel authentication but backend supported by all new Laravel Fortify. So here we have laravel Bootstrap 4 scaffolding supported by Laravel Fortify.
 
 ### Installation
 
