@@ -12,7 +12,7 @@ To get started, install LaravelUI Bootstrap4 using composer:
 composer require shahvirag/laravel-ui-bootstrap4
 ```
 
-Add FortifyServiceProvider to config/app.php
+Add FortifyServiceProvider to config/app.php, and do not forgot to publish fortify files.
 
 ```php
 'providers' => [
