@@ -22,10 +22,15 @@ Add FortifyServiceProvider to config/app.php, and do not forgot to publish forti
 ]
 ```
 
+```bash
+php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
+```
+
 Next install LaravelUI Bootstrap4 using artisan command:
 
 ```bash
 php artisan laravelui:bootstrap4
+npm install && npm run dev
 ```
 
 This command will update package.json with Bootstrap4 dependencies, update resources/sass and resources/js, and resources/views with authentication views like login, register, reset passsword request, layouts files etc.
