@@ -14,7 +14,7 @@
             "email": "shahvirag07@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php" : "^7.3",
         "illuminate/support": "^8.0",
@@ -26,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Shahvirag\\LaravelUiBootstrap4\\": "src/"
+            "Shahvirag\\LaravelUiBootstrap\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shahvirag\\LaravelUiBootstrap4\\Tests\\": "test/"
+            "Shahvirag\\LaravelUiBootstrap\\Tests\\": "test/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Shahvirag\\LaravelUiBootstrap4\\ServiceProvider"
+                "Shahvirag\\LaravelUiBootstrap\\LaravelUiBootstrapServiceProvider"
             ]
         }
     }

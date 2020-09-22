@@ -1,6 +1,6 @@
 <?php
 
-namespace Shahvirag\LaravelUiBootstrap4;
+namespace Shahvirag\LaravelUiBootstrap;
 
 use Illuminate\Console\Command;
 

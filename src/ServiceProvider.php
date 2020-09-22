@@ -1,11 +1,11 @@
 <?php
 
-namespace Shahvirag\LaravelUiBootstrap4;
+namespace Shahvirag\LaravelUiBootstrap;
 
-use Illuminate\Support\ServiceProvider as SupportServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
 
-class ServiceProvider extends SupportServiceProvider
+class LaravelUiBootstrapServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -66,8 +66,8 @@ class ServiceProvider extends SupportServiceProvider
                     ? view('auth.verify')
                     : view('laravel-ui-bootstrap4::auth.verify');
             });
-        }
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laravel-ui-bootstrap4');
+            $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laravel-ui-bootstrap4');
+        }
     }
 }
