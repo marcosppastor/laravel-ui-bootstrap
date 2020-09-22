@@ -38,6 +38,16 @@ class InstallCommand extends Command
     ];
 
     /**
+     * @var array
+     */
+    protected $resourceFiles = [
+        'sass/_variables.scss' => 'sass/_variables.scss',
+        'sass/app.scss' => 'sass/app.scss',
+        'js/bootstrap.js' => 'js/bootstrap.js',
+        'js/app.js' => 'js/app.js',
+    ];
+
+    /**
      * Create a new command instance.
      *
      * @return void
@@ -124,10 +134,9 @@ class InstallCommand extends Command
      */
     protected function exportAssets()
     {
-        copy(__DIR__.'/../resources/sass/_variables.scss', resource_path('sass/_variables.scss'));
-        copy(__DIR__.'/../resources/sass/app.scss', resource_path('sass/app.scss'));
-        copy(__DIR__.'/../resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
-        copy(__DIR__.'/../resources/js/app.js', resource_path('js/app.js'));
+        foreach ($this->resourceFiles as $sourcePath => $destinationPath) {
+            copy(__DIR__.'/../resources/'.$sourcePath, resource_path($destinationPath));
+        }
     }
 
     /**
@@ -169,6 +178,10 @@ class InstallCommand extends Command
      */
     protected function updateWebpackMix()
     {
+        if (! file_exists(base_path('webpack.mix.js'))) {
+            return;
+        }
+
         file_put_contents(
             base_path('webpack.mix.js'),
             file_get_contents(__DIR__.'/../resources/webpack.mix.js'),
