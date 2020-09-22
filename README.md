@@ -9,7 +9,7 @@ While laravel is using new Jetstream for authentication, but you still want to u
 To get started, install LaravelUI Bootstrap4 using composer:
 
 ```bash
-composer require shahvirag/laravel-ui-bootstrap4
+composer require shahvirag/laravel-ui-bootstrap
 ```
 
 Add FortifyServiceProvider to config/app.php, and do not forgot to publish fortify files.
