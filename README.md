@@ -29,7 +29,7 @@ php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
 Next install LaravelUI Bootstrap4 using artisan command:
 
 ```bash
-php artisan laravelui:bootstrap4
+php artisan laravelui:bootstrap
 npm install && npm run dev
 ```
 
