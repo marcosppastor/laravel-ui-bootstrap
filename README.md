@@ -37,9 +37,9 @@ This command will update package.json with Bootstrap4 dependencies, update resou
 
 ## Resources
 
-[Laravel](https://github.com/laravel/laravel)
-[Laravel Fortify](https://github.com/laravel/fortity)
-[Bootstrap](http://getbootstrap.com)
+[Laravel](https://github.com/laravel/laravel)  
+[Laravel Fortify](https://github.com/laravel/fortity)  
+[Bootstrap](http://getbootstrap.com)  
 [Laravel UI](https://github.com/laravel/ui)
 
 ## Contributing
