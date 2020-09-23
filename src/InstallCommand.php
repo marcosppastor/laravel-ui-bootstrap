@@ -11,7 +11,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'laravelui:bootstrap4
+    protected $signature = 'laravelui:bootstrap
                     {--force : Overwrite existing views by default}';
 
     /**
@@ -74,6 +74,7 @@ class InstallCommand extends Command
         $this->updateWebpackMix();
 
         $this->info('Bootstrap scaffolding installed successfully.');
+        $this->warn('Run "npm install && npm run dev" to compile resources.');
     }
 
     /**
@@ -81,12 +82,17 @@ class InstallCommand extends Command
      */
     protected function ensureDirectoriesExist()
     {
-        if (! is_dir($directory = $this->getViewPath('layouts'))) {
-            mkdir($directory, 0755, true);
-        }
+        $directories = [
+            $this->getViewPath('layouts'),
+            $this->getViewPath('auth/passwords'),
+            resource_path('sass'),
+            resource_path('js'),
+        ];
 
-        if (! is_dir($directory = $this->getViewPath('auth/passwords'))) {
-            mkdir($directory, 0755, true);
+        foreach ($directories as $directory) {
+            if (! is_dir($directory)) {
+                mkdir($directory, 0755, true);
+            }
         }
     }
 
