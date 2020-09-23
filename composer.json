@@ -1,10 +1,11 @@
 {
     "name": "shahvirag/laravel-ui-bootstrap",
-    "description": "Bootstrap 4 Starter template for Laravel8",
+    "description": "Bootstrap Starter template for Laravel",
     "keywords": [
         "laravel",
         "Bootstrap-4",
-        "uikit"
+        "laravel-ui",
+        "laravel-fortify-bootstrap"
     ],
     "type": "library",
     "license": "MIT",
