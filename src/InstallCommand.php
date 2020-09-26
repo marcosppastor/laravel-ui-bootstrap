@@ -35,6 +35,7 @@ class InstallCommand extends Command
         'auth/verify.blade.php' => 'auth/verify.blade.php',
         'layouts/app.blade.php' => 'layouts/app.blade.php',
         'home.blade.php' => 'home.blade.php',
+        'profile.blade.php' => 'profile.blade.php',
     ];
 
     /**
